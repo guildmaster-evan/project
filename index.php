@@ -17,7 +17,7 @@
     <div id="home" class="section">
         <!-- Home Section Content -->
         <main>
-            <h1>Welcome to Guild Coffee</h1>
+            <h1 class="main-title">Welcome to Guild Coffee</h1>
             <p class="slogan">Elevate your sip, join the Guild of Flavor.</p>
             <p>At Guild Coffee, every cup is a shared moment, a celebration of craftsmanship, and a passion rooted in the artistry that brings you the world’s exceptional coffees.</p>
 

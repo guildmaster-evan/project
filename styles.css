@@ -112,6 +112,13 @@ body {
     color: var(--tigers-eye);
 }
 
+.main-title {
+    font-size: 2em; /* Adjust the value as needed */
+    font-weight: bold;
+    align-self: flex-start; /* Positions the title at the start (left) of the flex container */
+    margin: 0; /* Remove default margin */
+}
+
 .slogan {
     font-size: 24px;
     font-weight: bold;
@@ -162,6 +169,8 @@ main img {
     width: 100%;
     height: auto;
 }
+
+
 
 /*ABOUT.php----------*/
 .container {
