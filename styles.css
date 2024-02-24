@@ -65,6 +65,12 @@ body {
     justify-content: space-between;
 }
 
+.main-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .contact-container .left,
 .contact-container .right {
     flex-basis: calc(50% - 20px);
@@ -111,12 +117,18 @@ body {
 .error-page p {
     color: var(--tigers-eye);
 }
-
+.heavy-guild {
+    font-size: 175px;
+    font-weight: bolder;
+    align-self: flex-start;
+    margin-top: -40px;
+    margin-bottom: 0px;
+}
 .main-title {
-    font-size: 2em; /* Adjust the value as needed */
+    font-size: 50px; /* Adjust the value as needed */
     font-weight: bold;
-    align-self: flex-start; /* Positions the title at the start (left) of the flex container */
-    margin: 0; /* Remove default margin */
+    margin-left: 20px;
+    margin: 0px; /* Remove default margin */
 }
 
 .slogan {
