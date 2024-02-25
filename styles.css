@@ -15,26 +15,59 @@ body {
     padding: 0;
 }
 
+.container{
+    display: flex;
+    max-width: 2400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .container {
+    flex-basis: calc(50% - 20px);
+    margin: 10px;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.container-about-img {
+    display: flex;
+    flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.container div {
+.container-about-img div {
     flex-basis: calc(50% - 20px);
     margin: 10px;
 }
 
-.container img {
+.container-about-img img {
     width: 100%;
     height: auto;
 }
 
+.container-about-img-box1 {
+    display: flex;
+}
+
+.container-about-img-box2 {
+    display: flex;
+}
+
 .container-about{
+    display: flex;
+    min-height: 800px;
+}
+.container-about-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 280px;
+    min-width: 250px;
 }
 
 .page-container {
@@ -44,19 +77,18 @@ body {
 }
 
 .product {
-    border: 1px solid var(--licorice);
     padding: 10px;
     margin: 10px;
 }
 
 .product h2,
 .product p {
-    margin: 0;
+    margin: 10px;
     padding: 0;
 }
 
 .product-price {
-    color: var(--gunmetal);
+    color: var(--tigers-eye);
     font-weight: bold;
 }
 
@@ -114,9 +146,13 @@ body {
     list-style-type: none;
     padding: 0;
 }
+.container-contact .menu li {
+    margin-bottom: 100px;
+}
 
-.contact-container .menu li {
-    margin-bottom: 10px;
+.contact-container .menu li a {
+    color: var(--ivory);
+    text-decoration: none;
 }
 
 .error-page {
@@ -151,17 +187,29 @@ body {
     margin: 0px; /* Remove default margin */
 }
 
-.slogan p {
+.slogan {
     display: flex;
     align-items: flex-start;
     margin-top: -20px;
-    font-size: 60px;
+    font-size: 24px;
     font-weight: bold;
     color: var(--tigers-eye);
 }
 
 .section {
     scroll-snap-align: start;
+}
+.store {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.store-feature {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 75px;
+    font-size: 50px;
 }
 
 /* Add scroll-snap-type for smooth scrolling between sections */
@@ -198,6 +246,10 @@ nav ul li {
 nav ul li a {
     color: var(--ivory);
     text-decoration: none;
+}
+
+nav ul li a.active {
+    display: none;
 }
 
 main img {

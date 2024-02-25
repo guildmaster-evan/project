@@ -26,9 +26,9 @@
                     </div>
                     <p class="slogan">Elevate your sip, join the Guild of Flavor.</p>
                 </div>
-                <p>At Guild Coffee, every cup is a shared moment, a celebration of craftsmanship, and a passion rooted in the artistry that brings you the world’s exceptional coffees.</p>
+                <img class="img-a" src="index\img\DSC08837 (1).png" alt="Home 1">
 
-                <!-- Add more content -->
+                <!--                 Add more content 
                 <section>
                     <h2>Our Story</h2>
                     <p>Guild Coffee was born out of a love for coffee and the desire to share the joy of a perfectly brewed cup with the world. Our journey began in 2020, and since then, we've been dedicated to sourcing the finest beans, perfecting our roasting process, and bringing the best flavors to our customers.</p>
@@ -42,32 +42,54 @@
                 <section>
                     <h2>Visit Us</h2>
                     <p>Experience the magic of Guild Coffee for yourself. Visit our coffee shop located at 123 Coffee Lane, Coffee City. We're open from Monday to Friday, 7am to 7pm, and on weekends from 8am to 3pm. We can't wait to serve you!</p>
-                </section>
+                </section> -->
             </main>
         </div>
 
         <div id="about" class="section">
             <!-- About Section Content -->
             <section class="container-about">
-                <h1>Brewing Quality, Pouring Art</h1>
-                <div class="container">
-                    <div><img src="path_to_your_image_1.jpg" alt="Coffee 1"></div>
-                    <div><img src="path_to_your_image_2.jpg" alt="Coffee 2"></div>
-                    <div><img src="path_to_your_image_3.jpg" alt="Coffee 3"></div>
-                    <div><img src="path_to_your_image_4.jpg" alt="Coffee 4"></div>
+                <div class="container-about-text">
+                    <h1>Brewing Quality, Pouring Art</h1>
+                    <p>Welcome to Guild Coffee, where the art of coffee is a passion, a journey, and a commitment to excellence. Established with a shared love for exceptional coffee experiences, Guild Coffee is more than a brand; it’s a community of enthusiasts, roasters, and artisans dedicated to crafting moments that elevate the everyday.</p>
+                </div>
+                <div class="container-about-img">
+                    <div class="container-about-img-box1">
+                        <div><img class="img-a" src="about\img\20230910_091808.jpg" alt="Coffee 1"></div>
+                        <div><img class="img-b" src="about\img\20230912_093007.jpg" alt="Coffee 2"></div>
+                    </div>
+                    <div class="container-about-img-box2">
+                        <div><img class="img-c" src="about\img\20230915_070820.jpeg" alt="Coffee 3"></div>
+                        <div><img class="img-d" src="about\img\20230917_101237.jpeg" alt="Coffee 4"></div>
+                    </div>
                 </div>
             </section>
         </div>
 
         <div id="store" class="section">
             <!-- Store Section Content -->
-            <section>
+            <section class="store">
+                <h1 class="store-feature">Featured Coffee</h1>
                 <div class="container">
                     <div class="product">
-                        <img src="path_to_your_image_1.jpg" alt="Coffee 1">
-                        <h2>El Salvador Santa Isabel</h2>
+                        <img src="store\img\10-01-2023-el-salv-santa-isabel-washed_1024x.jpg" alt="Coffee 1">
                         <p class="product-price">$22</p>
                         <p class="product-description">Santa Isabel - El Salvador (Washed)</p>
+                    </div>
+                    <div class="product">
+                        <img src="store\img\Orangeimage.png" alt="Coffee 2">
+                        <p class="product-price">$23</p>
+                        <p class="product-description">Santa Isabel - El Salvador (Natural Process)</p>
+                    </div>
+                    <div class="product">
+                        <img src="store\img\Grayimage.png" alt="Coffee 3">
+                        <p class="product-price">$18</p>
+                        <p class="product-description">Roaster’s Choice</p>
+                    </div>
+                    <div class="product">
+                        <img src="store\img\Trashimage.png" alt="Coffee 4">
+                        <p class="product-price">$18</p>
+                        <p class="product-description">Esmeralda Decaf – Mexico</p>
                     </div>
                     <!-- Repeat for other products -->
                 </div>
@@ -95,12 +117,8 @@
 
                     <div class="right">
                         <h2>Guild Coffee</h2>
-                        <p>Thank you for being a part of our coffee community. At Guild Coffee,
-                            every cup is a shared moment,
-                            a celebration of craftsmanship,
-                            and a passion rooted in the artistry that brings you the world’s exceptional coffees. We invite you on this exploration,
-                            and are honored to be your symphony of coffee experiences as we explore together with soulful moments.
-                            Cheers to many more!</p>
+                        <p>Thank you for being a part of our coffee community. At Guild Coffee, every cup is a shared moment, a celebration of craftsmanship, and a journey into the world of exceptional flavors. Whether you’re a seasoned coffee aficionado or just beginning your exploration, we’re honored to have you with us. Sip, savor, and join us in the delightful symphony of coffee experiences. Cheers to many more flavorful moments!</p>
+                        <p>Warm regards, The Guild Coffee Team</p>
 
                         <h2>Contact</h2>
                         <p>123 Midview St</p>
@@ -115,12 +133,11 @@
 
                         <h2>Menu</h2>
                         <ul class="menu">
-                            <li>About</li>
-                            <li>Blog</li>
-                            <li>Contact</li>
-                            <li>Services</li>
-                            <li>Gallery</li>
-                            <li>Store</li>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="about.php">About</a></li>
+                            <li><a href="store\store.php">Store</a></li>
+                            <li><a href="contact.php">Contact</a></li>
+                            <li><a href="login.php">Login</a></li>
                         </ul>
                     </div>
                 </div>
