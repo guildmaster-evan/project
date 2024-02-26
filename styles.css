@@ -1,9 +1,11 @@
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Color variables */
 :root {
     --viridian: #5D896Dff;
     --gunmetal: #14242Dff;
@@ -13,6 +15,7 @@
     --ivory: #fef1cf;
 }
 
+/* Body styles */
 body {
     font-family: Arial, sans-serif;
     background-color: var(--gunmetal);
@@ -21,7 +24,8 @@ body {
     padding: 0;
 }
 
-.container{
+/* General container styles */
+.container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -39,6 +43,7 @@ body {
     height: auto;
 }
 
+/* About page container styles */
 .container-about-img {
     display: flex;
     flex-direction: column;
@@ -57,17 +62,16 @@ body {
     height: auto;
 }
 
-.container-about-img-box1 {
-    display: flex;
-}
-
+.container-about-img-box1,
 .container-about-img-box2 {
     display: flex;
 }
 
-.container-about{
+/* About page text container styles */
+.container-about {
     display: flex;
 }
+
 .container-about-text {
     display: flex;
     flex-direction: column;
@@ -76,12 +80,14 @@ body {
     min-width: 250px;
 }
 
+/* Page container styles */
 .page-container {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
 }
 
+/* Product styles */
 .product {
     padding: 10px;
     margin: 10px;
@@ -102,6 +108,7 @@ body {
     color: var(--tigers-eye);
 }
 
+/* Color styles */
 .primary-color {
     color: var(--gunmetal);
 }
@@ -110,23 +117,18 @@ body {
     color: var(--tigers-eye);
 }
 
+/* Contact container styles */
 .contact-container {
     display: flex;
     justify-content: space-between;
 }
-.title-heavy-container {
+
+.title-heavy-container,
+.welcome-container,
+.heavy-guild-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-.welcome-container {
-    display: flex;
-    flex-direction: column;
-}
-.heavy-guild-container {
-        display: flex;
-        align-items: flex-start;
-        margin-left: -.5em;
 }
 
 .contact-container .left,
@@ -152,6 +154,7 @@ body {
     list-style-type: none;
     padding: 0;
 }
+
 .container-contact .menu li {
     margin-bottom: 100px;
 }
@@ -161,6 +164,7 @@ body {
     text-decoration: none;
 }
 
+/* Error page styles */
 .error-page {
     text-align: center;
     padding: 50px 0;
@@ -179,6 +183,8 @@ body {
 .error-page p {
     color: var(--tigers-eye);
 }
+
+/* Heavy guild text styles */
 .heavy-guild {
     font-size: 175px;
     font-weight: bolder;
@@ -186,13 +192,16 @@ body {
     margin-top: -40px;
     margin-bottom: 0px;
 }
+
+/* Main title styles */
 .main-title {
-    font-size: 50px; /* Adjust the value as needed */
+    font-size: 50px;
     font-weight: bold;
     margin-left: 20px;
-    margin: 0px; /* Remove default margin */
+    margin: 0px;
 }
 
+/* Slogan styles */
 .slogan {
     display: flex;
     align-items: flex-start;
@@ -202,9 +211,12 @@ body {
     color: var(--tigers-eye);
 }
 
+/* Section styles */
 .section {
     scroll-snap-align: start;
 }
+
+/* Store styles */
 .store {
     display: flex;
     flex-direction: column;
@@ -218,13 +230,14 @@ body {
     font-size: 50px;
 }
 
-/* Add scroll-snap-type for smooth scrolling between sections */
+/* Smooth scrolling styles */
 body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
+/* Header styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -239,6 +252,7 @@ header img {
     width: 50px;
 }
 
+/* Navigation styles */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -258,16 +272,19 @@ nav ul li a.active {
     display: none;
 }
 
+/* Main image styles */
 main img {
     width: 100%;
     height: auto;
 }
 
+/* Container paragraph link styles */
 .container p a {
-        color: var(--tigers-eye);
-            text-decoration: none;
+    color: var(--tigers-eye);
+    text-decoration: none;
 }
 
+/* Login page container styles */
 .login-page-container {
     display: flex;
     flex-direction: column;
@@ -277,6 +294,7 @@ main img {
     background-color: var(--gunmetal);
 }
 
+/* Login form styles */
 .login-form {
     background-color: var(--licorice);
     padding: 20px;
@@ -332,30 +350,24 @@ main img {
     margin-top: 20px;
 }
 
-
-/*ABOUT.php----------*/
+/* About page container styles (repeated) */
 .container {
     display: flex;
 }
 
 .container div {
     flex-basis: 25%;
-    /* Each image takes up 25% of the container */
     box-sizing: border-box;
-    /* Include padding and border in the total width and height */
     padding: 10px;
-    /* Add padding for spacing between images */
 }
 
 .container img {
     width: 100%;
-    /* Make the image fill the entire width of its container */
     height: auto;
-    /* Maintain the aspect ratio of the image */
     display: block;
-    /* Remove extra spacing below the image */
 }
-/*-----------------*/
+
+/* Media queries */
 @media (min-width: 576px) {
 
     .container,
@@ -364,9 +376,9 @@ main img {
     .contact-container,
     .error-page {
         padding: 10px;
-                display: flex;
-                    flex-wrap: wrap;
-                    flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 }
 
@@ -379,7 +391,6 @@ main img {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        
     }
 }
 
