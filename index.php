@@ -9,8 +9,6 @@
 </head>
 
 <body>
-
-    <!-- Include the header -->
     <?php include 'header.php'; ?>
 
     <div class="page-container">
@@ -27,23 +25,6 @@
                     <p class="slogan">Elevate your sip, join the Guild of Flavor.</p>
                 </div>
                 <img class="img-a" src="index\img\DSC08837 (1).png" alt="Home 1">
-
-                <!--                 Add more content 
-                <section>
-                    <h2>Our Story</h2>
-                    <p>Guild Coffee was born out of a love for coffee and the desire to share the joy of a perfectly brewed cup with the world. Our journey began in 2020, and since then, we've been dedicated to sourcing the finest beans, perfecting our roasting process, and bringing the best flavors to our customers.</p>
-                </section>
-
-                <section>
-                    <h2>Our Coffee</h2>
-                    <p>We believe that every cup of coffee tells a story. That's why we source our beans from the best coffee-growing regions around the world. Each of our blends has its own unique flavor profile, from the robust, dark notes of our Espresso Roast to the smooth, light flavor of our Morning Blend.</p>
-                </section>
-
-                <section>
-                    <h2>Visit Us</h2>
-                    <p>Experience the magic of Guild Coffee for yourself. Visit our coffee shop located at 123 Coffee Lane, Coffee City. We're open from Monday to Friday, 7am to 7pm, and on weekends from 8am to 3pm. We can't wait to serve you!</p>
-                </section> -->
-            </main>
         </div>
 
         <div id="about" class="section">
@@ -91,7 +72,6 @@
                         <p class="product-price">$18</p>
                         <p class="product-description">Esmeralda Decaf – Mexico</p>
                     </div>
-                    <!-- Repeat for other products -->
                 </div>
             </section>
         </div>
@@ -145,9 +125,7 @@
         </div>
         <script src="script.js"></script>
     </div>
-
-
-
+    <?php include 'footer.php'; ?>
 </body>
 
 </html>

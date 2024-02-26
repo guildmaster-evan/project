@@ -6,7 +6,7 @@
 </head>
 
 <body>
-
+    <?php include 'header.php'; ?>
     <div class="contact-container">
         <div class="left">
             <h2>Visit us</h2>
@@ -54,7 +54,7 @@
             </ul>
         </div>
     </div>
-
+    <?php include 'footer.php'; ?>
 </body>
 
 </html>

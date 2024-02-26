@@ -23,12 +23,13 @@ body {
 
 .container{
     display: flex;
-    max-width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 80vw;
     padding: 20px;
 }
 
 .container div {
-    flex-basis: calc(40% - 20px);
     margin: 10px;
     flex-shrink: 0;
 }
@@ -262,6 +263,74 @@ main img {
     height: auto;
 }
 
+.container p a {
+        color: var(--tigers-eye);
+            text-decoration: none;
+}
+
+.login-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--gunmetal);
+}
+
+.login-form {
+    background-color: var(--licorice);
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-label {
+    display: block;
+    margin-top: 10px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.show-password {
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    color: var(--viridian);
+    text-decoration: underline;
+}
+
+.login-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--viridian);
+    color: var(--ivory);
+    border: none;
+    border-radius: 5px;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
 
 
 /*ABOUT.php----------*/
@@ -295,6 +364,9 @@ main img {
     .contact-container,
     .error-page {
         padding: 10px;
+                display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
     }
 }
 
@@ -304,7 +376,10 @@ main img {
     .contact-container,
     .error-page {
         padding: 20px;
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
     }
 }
 
@@ -316,6 +391,9 @@ main img {
     .contact-container,
     .error-page {
         padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 }
 

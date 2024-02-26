@@ -9,17 +9,31 @@
 </head>
 
 <body>
-    <form action="response.php" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+    <?php include 'header.php'; ?>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+    <div class="login-page-container">
+        <form action="response.php" method="post" class="login-form">
+            <h2 class="login-title">Sign in</h2>
 
-        <button type="submit">Submit</button>
-    </form>
+            <label for="username" class="login-label">Email or Phone:</label>
+            <input type="text" id="username" name="username" required class="login-input">
 
-    <p>Don't have an account? <a href="signup.php">Sign up here</a>.</p>
+            <label for="password" class="login-label">Password:</label>
+            <input type="password" id="password" name="password" required class="login-input">
+            <span class="show-password">show</span>
+
+            <!-- Hidden fields to pass data to response.php -->
+            <input type="hidden" name="redirect" value="login">
+            <input type="hidden" name="message" value="Login successful!">
+
+            <button type="submit" class="login-button">Sign in</button>
+            <p class="forgot-password"><a href="#">Forgot password?</a></p>
+        </form>
+
+        <p class="signup-link">Don't have an account? <a href="signup.php">Join now</a>.</p>
+    </div>
+
+    <?php include 'footer.php'; ?>
 </body>
 
 </html>
