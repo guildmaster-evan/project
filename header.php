@@ -8,7 +8,7 @@
 <body>
 
     <header>
-        <img src="logo2.JPEG" alt="Guild Coffee Logo">
+        <img src="logo3.png" alt="Guild Coffee Logo">
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
