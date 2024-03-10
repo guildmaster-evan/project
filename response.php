@@ -1,3 +1,8 @@
+<?php
+    include_once 'includes\connect.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,21 +57,40 @@
 <body>
     <div class="response-container">
         <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            // Check if the form was submitted from the signup page
-            if ($_POST['redirect'] === 'signup') {
-                echo "<h2>Sign Up Successful</h2>";
-                echo "<p>{$_POST['message']}</p>";
-            } else {
-                // Check if the form was submitted from the login page
-                if ($_POST['redirect'] === 'login') {
-                    echo "<h2>Login Successful</h2>";
-                    echo "<p>{$_POST['message']}</p>";
+            $sql = "SELECT * FROM mytable;";
+            $result = mysqli_query($conn, $sql);
+            $resultCheck = mysqli_num_rows($result);
+            /*if ($resultCheck > 0){
+                while ($row = mysqli_fetch_assoc($result)){
+                    echo $row['username'] . "<br>";
+                }
+            }*/
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                // Check if the form was submitted from the signup page
+                if ($_POST['redirect'] === 'signup') {
+                    echo "<h2>Sign Up Successful</h2>";
+                    if ($resultCheck > 0) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            echo $row['username'] . "<br>";
+                        }
+                    //echo "<p>{$_POST['message']}</p>";
+                    } 
+                }
+                else {
+                    // Check if the form was submitted from the login page
+                    if ($_POST['redirect'] === 'login') {
+                        echo "<h2>Login Successful</h2>";
+                            if ($resultCheck > 0) {
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    echo $row['username'] . "<br>";
+                                }
+                        //echo "<p>{$_POST['message']}</p>";
+                            }
+                    }   
                 }
             }
-        }
-        // Provide a link back to the home page
-        echo '<p><a href="index.php">Go back to Home</a></p>';
+            // Provide a link back to the home page
+            echo '<p><a href="index.php">Go back to Home</a></p>';
         ?>
     </div>
 </body>
