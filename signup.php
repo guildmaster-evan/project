@@ -12,7 +12,7 @@
     <?php include 'header.php'; ?>
 
     <div class="login-page-container">
-        <form action="response.php" method="post" class="login-form">
+        <form action="includes\signup.inc.php" method="post" class="login-form">
             <h2 class="login-title">Sign up</h2>
 
             <label for="username" class="login-label">Email or Phone:</label>
@@ -23,7 +23,7 @@
             <span class="show-password">show</span>
 
             <label for="confirm_password" class="login-label">Confirm Password:</label>
-            <input type="password" id="confirm_password" name="confirm_ password" required class="login-input">
+            <input type="password" id="confirm_password" name="passwordRepeat" required class="login-input">
             <span class="show-password">show</span>
 
             <!-- Hidden fields to pass data to response.php -->
