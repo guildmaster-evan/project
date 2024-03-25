@@ -45,7 +45,8 @@ if (isset($_POST['signup-submit'])) {
                 else{
                     $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
 
-                    mysqli_stmt_bind_param($stmt, "ss", $username, $hashedPwd);
+                    //mysqli_stmt_bind_param($stmt, "ss", $username, $hashedPwd);  //Password is being hashed
+                    mysqli_stmt_bind_param($stmt, "ss", $username, $password);  //Password is NOT being Hashed
                     mysqli_stmt_execute($stmt);
                     header("Location: ../login.php");
                     exit();
