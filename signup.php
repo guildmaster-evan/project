@@ -33,7 +33,7 @@
             <button type="submit" name=signup-submit class="login-button">Sign up</button>
         </form>
 
-        <p class="signup-link">Already have an account? <a href="login.php">Login Now</a>.</p>
+        <p class="signup-link">Already have an account? <a href="login.php">Login now</a>.</p>
     </div>
 
     <?php include 'footer.php'; ?>

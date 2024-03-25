@@ -30,7 +30,7 @@
             <p class="forgot-password"><a href="#">Forgot password?</a></p>
         </form>
 
-        <p class="signup-link">Don't have an account? <a href="signup.php">Join now</a>.</p>
+        <p class="signup-link">Don't have an account? <a href="signup.php">Sign Up now</a>.</p>
     </div>
 
     <?php include 'footer.php'; ?>

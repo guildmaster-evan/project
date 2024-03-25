@@ -93,23 +93,13 @@
 
                         <h2>Contact</h2>
                         <p>(123) 456-7890</p>
+                        <p><a style="color: var(--tigers-eye);" href="mailto:guildcoffeesatx@gmail.com">guildcoffeesatx@gmail.com</a></p>
                     </div>
 
                     <div class="right">
                         <h2>Guild Coffee</h2>
                         <p>Thank you for being a part of our coffee community. At Guild Coffee, every cup is a shared moment, a celebration of craftsmanship, and a journey into the world of exceptional flavors. Whether you’re a seasoned coffee aficionado or just beginning your exploration, we’re honored to have you with us. Sip, savor, and join us in the delightful symphony of coffee experiences. Cheers to many more flavorful moments!</p>
                         <p>Warm regards, The Guild Coffee Team</p>
-
-                        <h2>Contact</h2>
-                        <p>123 Midview St</p>
-                        <p>San Antonio, TX 12345</p>
-                        <p>(123) 456-7890</p>
-
-                        <h2 class="hours">Hours</h2>
-                        <p>Monday—Friday</p>
-                        <p>7am—7pm</p>
-                        <p>Saturday—Sunday</p>
-                        <p>8am—3pm</p>
 
                         <h2>Menu</h2>
                         <ul class="menu">
