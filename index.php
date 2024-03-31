@@ -9,7 +9,13 @@
 </head>
 
 <body>
-    <?php include 'header.php'; ?>
+    <?php 
+    include 'header.php';
+    if (isset($_SESSION['userID'])){
+        echo '<p you are logged in! </p>';
+    }
+    else
+    ?>
 
     <div class="page-container">
         <div id="home" class="section">
