@@ -84,7 +84,11 @@ body {
 .page-container {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1200px;
+    /* Adjust the maximum width as needed */
+    padding: 20px;
 }
 
 /* Product styles */
@@ -241,6 +245,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 25px;
     background-color: var(--viridian);
     color: var(--gunmetal);
@@ -266,6 +271,15 @@ nav ul li {
 nav ul li a {
     color: var(--ivory);
     text-decoration: none;
+}
+
+/* Session welcome styles */
+.session_welcome {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Align to the right side */
 }
 
 nav ul li a.active {

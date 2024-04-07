@@ -20,7 +20,7 @@ if (isset($_POST['login-submit'])) {
             exit();
         }
         else{
-            mysqli_stmt_bind_param($stmt, "ss", $username, $password);
+            mysqli_stmt_bind_param($stmt, "s", $username);
             mysqli_stmt_execute($stmt);
             $result = mysqli_stmt_get_result($stmt);
             if ($row = mysqli_fetch_assoc($result)){
@@ -28,15 +28,21 @@ if (isset($_POST['login-submit'])) {
                 if ($passwordCheck == false){
                     header("Location: ../login.php?error=wrongpassword");
                     exit();
-                }
-            }
-            else if ($passwordCheck == true){
-                session_start();
-                $_SESSION['userID'] = $row['ID'];
-                $_SESSION['userName'] = $row['username'];
+                } 
+                else if ($passwordCheck == true) {
+                    session_start();
+                    $_SESSION['userID'] = $row['ID'];
+                    $_SESSION['userName'] = $row['username'];
+                    $_SESSION['username'] = $username; // Set the username in the session
 
-                header("Location: ../login.php?login=success");
+                    header("Location: ../response.php?login=success");
+                    exit();
+            }
+            else{
+                header("Location: ../index.php?error=nouser");
                 exit();
+            }
+            
             }
             else {
                 header("Location: ../login.php?error=wrongpassword");
@@ -49,6 +55,6 @@ if (isset($_POST['login-submit'])) {
     }
 } 
 else {
-    header("location: ../signup.php");
-}
+    header("location: ../login.php");
+} 
 ?>

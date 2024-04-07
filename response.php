@@ -1,6 +1,6 @@
 <?php
-    include_once 'includes\connect.php';
-
+session_start();
+require 'includes\connect.php';
 ?>
 
 <!DOCTYPE html>
@@ -57,40 +57,27 @@
 <body>
     <div class="response-container">
         <?php
-            $sql = "SELECT * FROM mytable;";
-            $result = mysqli_query($conn, $sql);
-            $resultCheck = mysqli_num_rows($result);
-            /*if ($resultCheck > 0){
-                while ($row = mysqli_fetch_assoc($result)){
-                    echo $row['username'] . "<br>";
-                }
-            }*/
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                // Check if the form was submitted from the signup page
-                if ($_POST['redirect'] === 'signup') {
-                    echo "<h2>Sign Up Successful</h2>";
-                    if ($resultCheck > 0) {
-                        while ($row = mysqli_fetch_assoc($result)) {
-                            echo $row['username'] . "<br>";
-                        }
-                    //echo "<p>{$_POST['message']}</p>";
-                    } 
-                }
-                else {
-                    // Check if the form was submitted from the login page
-                    if ($_POST['redirect'] === 'login') {
-                        echo "<h2>Login Successful</h2>";
-                            if ($resultCheck > 0) {
-                                while ($row = mysqli_fetch_assoc($result)) {
-                                    echo $row['username'] . "<br>";
-                                }
-                        //echo "<p>{$_POST['message']}</p>";
-                            }
-                    }   
-                }
+        // Check if the username is set in the session
+        if (isset($_SESSION['username'])) {
+            $username = $_SESSION['username'];
+            echo '<h2>Welcome, ' . $username . '!</h2>';
+        } else {
+            echo '<h2>Welcome!</h2>';
+        }
+
+        // Display all usernames from the database
+        $sql = "SELECT * FROM mytable";
+        $result = mysqli_query($conn, $sql);
+        if (mysqli_num_rows($result) > 0) {
+            echo '<h3>All Usernames:</h3>';
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo $row['username'] . "<br>";
             }
-            // Provide a link back to the home page
-            echo '<p><a href="index.php">Go back to Home</a></p>';
+        } else {
+            echo '<p>No usernames found.</p>';
+        }
+        // Provide a link back to the home page
+        echo '<p><a href="index.php">Go back to Home</a></p>';
         ?>
     </div>
 </body>

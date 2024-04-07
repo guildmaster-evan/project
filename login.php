@@ -12,8 +12,8 @@
     <?php include 'header.php'; ?>
 
     <div class="login-page-container">
-        <form action="response.php" method="post" class="login-form">
-            <h2 class="login-title">Sign in</h2>
+        <form action="includes\login.inc.php" method="post" class="login-form">
+            <h2 class="login-title">Log in</h2>
 
             <label for="username" class="login-label">Email or Phone:</label>
             <input type="text" id="username" name="username" required class="login-input">
@@ -26,7 +26,7 @@
             <input type="hidden" name="redirect" value="login">
             <input type="hidden" name="message" value="Login successful!">
 
-            <button type="submit" class="login-button">Sign in</button>
+            <button type="submit" name="login-submit" class="login-button">Sign in</button>
             <p class="forgot-password"><a href="#">Forgot password?</a></p>
         </form>
 
