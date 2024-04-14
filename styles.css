@@ -86,7 +86,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 2400px;
     /* Adjust the maximum width as needed */
     padding: 20px;
 }
@@ -260,8 +260,9 @@ header img {
 /* Navigation styles */
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding-bottom: 10px;
     display: flex;
+    justify-content: flex-end;
 }
 
 nav ul li {
@@ -271,15 +272,16 @@ nav ul li {
 nav ul li a {
     color: var(--ivory);
     text-decoration: none;
+    align-content: flex-end;
 }
 
 /* Session welcome styles */
 .session_welcome {
-    margin-top: 20px;
+    color: var(--ivory);
+    font-size: small;
+    list-style-type: none;
     display: flex;
-    align-items: center;
     justify-content: flex-end;
-    /* Align to the right side */
 }
 
 nav ul li a.active {

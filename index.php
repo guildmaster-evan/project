@@ -14,17 +14,6 @@
     ?>
 
     <div class="page-container">
-        <!-- Move the session welcome message below the header -->
-        <div class="session_welcome">
-            <?php
-            if (isset($_SESSION['userID'])) {
-                $username = $_SESSION['userName'];
-                echo '<p style="text-align: right;padding-right: 25px;" class="login-status">Welcome, ', $username, '!</p>';
-            } else {
-                echo '<p style="text-align: right;padding-right: 25px;" class="login-status">You are logged out!</p>';
-            }
-            ?>
-        </div>
         <div id="home" class="section">
             <!-- Home Section Content -->
             <main>
