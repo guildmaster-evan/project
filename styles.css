@@ -44,17 +44,28 @@ body {
 }
 
 /* About page container styles */
-.container-about-img {
+/* Title and text columns styles (customize as needed) */
+.about-content {
     display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: space-between;
+    
+    /* Add other styles for columns, headers, and paragraphs */
+}
+/* Call-to-action section styles (customize as needed) */
+.cta-section {
+    font-size: 24px;
+    /* Add other styles for the call-to-action section */
+}
+.left-column {
+    flex: 1;
     padding: 20px;
 }
 
-.container-about-img div {
-    flex-basis: calc(50% - 20px);
-    margin: 10px;
+.right-column {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--viridian);
+    color: var(--ivory);
 }
 
 .container-about-img img {
@@ -254,7 +265,7 @@ header {
 header img {
     height: auto;
     border-radius: 50%;
-    width: 50px;
+    width: 100px;
 }
 
 /* Navigation styles */
@@ -381,6 +392,24 @@ main img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* About content styles */
+.about-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--licorice);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
 }
 
 /* Media queries */

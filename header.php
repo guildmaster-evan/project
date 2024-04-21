@@ -9,7 +9,7 @@
 <body>
 
     <header>
-        <a href="index.php"><img src="logo3.png" alt="Guild Coffee Logo"></a>
+        <a href="index.php"><img src="logo4.png" alt="Guild Coffee Logo"></a>
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
