@@ -16,10 +16,10 @@
             <h2 class="login-title">Log in</h2>
 
             <label for="username" class="login-label">Email or Phone:</label>
-            <input type="text" id="username" name="username" required class="login-input">
+            <input type="text" id="username" name="username" class="login-input">
 
             <label for="password" class="login-label">Password:</label>
-            <input type="password" id="password" name="password" required class="login-input">
+            <input type="password" id="password" name="password" class="login-input">
             <span class="show-password">show</span>
 
             <!-- Hidden fields to pass data to response.php -->

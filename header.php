@@ -15,7 +15,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="store.php">Store</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.php#contact">Contact</a></li>
             </ul>
             <ul>
                 <?php if (isset($_SESSION['userID'])) : ?>
@@ -24,7 +24,7 @@
                             <?php
                             if (isset($_SESSION['userID'])) {
                                 $username = $_SESSION['userName'];
-                                echo '<p class="login-status">Welcome, ', $username, '!</p>';
+                                echo '<a href="response.php">Welcome, ', $username, '!</a>';
                             }
                             ?>
                         </li>
@@ -32,6 +32,7 @@
                             <form action="includes/logout.inc.php" method="post">
                                 <button type="submit" name="logout-submit" style="color: var(--ivory); text-decoration: none; border: none; background: none; cursor: pointer; font-size: inherit;">Logout</button>
                             </form>
+                        </li>
                         </li>
                     </div>
                 <?php else : ?>

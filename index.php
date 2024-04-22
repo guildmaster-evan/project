@@ -34,7 +34,7 @@
             <section class="container-about">
                 <div class="container-about-text">
                     <h1>Brewing Quality, Pouring Art</h1>
-                    <p>Welcome to Guild Coffee, where the art of coffee is a passion, a journey, and a commitment to excellence. Established with a shared love for exceptional coffee experiences, Guild Coffee is more than a brand; it’s a community of enthusiasts, roasters, and artisans dedicated to crafting moments that elevate the everyday.</p>
+                        <p>Welcome to Guild Coffee, where the art of coffee is a passion, a journey, and a commitment to excellence. Established with a shared love for exceptional coffee experiences, Guild Coffee is more than a brand; it’s a community of enthusiasts, roasters, and artisans dedicated to crafting moments that elevate the everyday.</p>
                 </div>
                 <div class="container-about-img">
                     <div class="container-about-img-box1">

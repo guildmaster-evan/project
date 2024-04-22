@@ -16,14 +16,14 @@
             <h2 class="login-title">Sign up</h2>
 
             <label for="username" class="login-label">Username:</label>
-            <input type="text" id="username" name="username" required class="login-input">
+            <input type="text" id="username" name="username" class="login-input">
 
             <label for="password" class="login-label">Password:</label>
-            <input type="password" id="password" name="password" required class="login-input">
+            <input type="password" id="password" name="password" class="login-input">
             <span class="show-password">show</span>
 
             <label for="confirm_password" class="login-label">Confirm Password:</label>
-            <input type="password" id="confirm_password" name="passwordRepeat" required class="login-input">
+            <input type="password" id="confirm_password" name="passwordRepeat" class="login-input">
             <span class="show-password">show</span>
 
             <!-- Hidden fields to pass data to response.php -->
