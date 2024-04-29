@@ -16,7 +16,7 @@ if (isset($_POST['signup-submit'])) {
         exit();
     }
     else if ($password !== $passwordRepeat) {
-        header("Location: ../signup.php?error=passwords_do_no_match" . $username);
+        header("Location: ../signup.php?error=passwords_do_no_match&username" . $username);
         exit();
     }
     else {
@@ -58,6 +58,6 @@ if (isset($_POST['signup-submit'])) {
     }
 } 
 else {
-    header("location: ../signup.php");
+    header("location: ../signup.php?signup=success");
 }
 ?>

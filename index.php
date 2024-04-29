@@ -26,7 +26,7 @@
                     </div>
                     <p class="slogan">Elevate your sip, join the Guild of Flavor.</p>
                 </div>
-                <img class="img-a" src="index\img\DSC08837 (1).png" alt="Home 1">
+                <img class="img-a" src="index\img\DSC08837 (2).png" alt="Home 1">
         </div>
 
         <div id="about" class="section">
@@ -34,16 +34,12 @@
             <section class="container-about">
                 <div class="container-about-text">
                     <h1>Brewing Quality, Pouring Art</h1>
-                        <p>Welcome to Guild Coffee, where the art of coffee is a passion, a journey, and a commitment to excellence. Established with a shared love for exceptional coffee experiences, Guild Coffee is more than a brand; it’s a community of enthusiasts, roasters, and artisans dedicated to crafting moments that elevate the everyday.</p>
+                    <p>Welcome to Guild Coffee, where the art of coffee is a passion, a journey, and a commitment to excellence. Established with a shared love for exceptional coffee experiences, Guild Coffee is more than a brand; it’s a community of enthusiasts, roasters, and artisans dedicated to crafting moments that elevate the everyday.</p>
                 </div>
                 <div class="container-about-img">
                     <div class="container-about-img-box1">
                         <div><img class="img-a" src="about\img\20230910_091808.jpg" alt="Coffee 1"></div>
                         <div><img class="img-b" src="about\img\20230912_093007.jpg" alt="Coffee 2"></div>
-                    </div>
-                    <div class="container-about-img-box2">
-                        <div><img class="img-c" src="about\img\20230915_070820.jpeg" alt="Coffee 3"></div>
-                        <div><img class="img-d" src="about\img\20230917_101237.jpeg" alt="Coffee 4"></div>
                     </div>
                 </div>
             </section>
@@ -53,7 +49,7 @@
             <!-- Store Section Content -->
             <section class="store">
                 <h1 class="store-feature">Featured Coffee</h1>
-                <div class="container">
+                <div id="coffees" class="container">
                     <div class="product">
                         <img src="store\img\10-01-2023-el-salv-santa-isabel-washed_1024x.jpg" alt="Coffee 1">
                         <p class="product-price">$22</p>
