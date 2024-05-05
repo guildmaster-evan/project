@@ -37,25 +37,30 @@
             <h2>DRIPPERS</h2>
             <div class="containersDrippers">
                 <div class="storeImgcontainer">
-                    <img src="store\img\drippers\pink1.jpg" alt="Dripper-">
+                    <img src="store\img\drippers\pink1.jpg" alt="Dripper-Pink">
+                    <img src="store\img\drippers\pink2.jpg" alt="Dripper-Pink" class="hover-Pink">
                     <p>V60 Plastic Coffee Dripper 02 - </p>
                     <p>Night Sky Series ✨</p>
                 </div>
                 <div class="storeImgcontainer">
-                    <img src="store\img\drippers\metal1.jpg" alt="Dripper-">
+                    <img src="store\img\drippers\metal1.jpg" alt="Dripper-Metal">
+                    <img src="store\img\drippers\metal2.jpg" alt="Dripper-Metal" class="hover-Metal">
                     <p>V60 Metal Coffee Dripper 02</p>
                 </div>
                 <div class="storeImgcontainer">
-                    <img src="store\img\drippers\terracotta1.jpg" alt="Dripper-">
+                    <img src="store\img\drippers\terracotta1.jpg" alt="Dripper-Terra Cotta">
+                    <img src="store\img\drippers\terracotta2.jpg" alt="Dripper-Terra Cotta" class="hover-Terra">
                     <p>V60 Ceramic Coffee Dripper 02 </p>
                     <p>New Colors</p>
                 </div>
                 <div class="storeImgcontainer">
-                    <img src="store\img\drippers\white1.jpg" alt="Dripper-">
+                    <img src="store\img\drippers\white1.jpg" alt="Dripper-White">
+                    <img src="store\img\drippers\white2.jpg" alt="Dripper-White" class="hover-White">
                     <p>V60 Ceramic Coffee Dripper 02 </p>
                     <p>Classic Colors</p>
                 </div>
             </div>
+
             <h2>FEATURED COFFEE</h2>
             <div class="containersCoffee">
                 <div class="storeImgcontainer">

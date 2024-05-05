@@ -42,3 +42,12 @@
             </ul>
         </nav>
     </header>
+    <div class="custom-cursor"></div>
+    <script>
+        // JavaScript to track mouse movement and update custom cursor position
+        document.addEventListener('mousemove', function(e) {
+            var cursor = document.querySelector('.custom-cursor');
+            cursor.style.top = e.clientY + 'px';
+            cursor.style.left = e.clientX + 'px';
+        });
+    </script>

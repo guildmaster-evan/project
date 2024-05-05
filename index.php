@@ -12,7 +12,6 @@
     <?php
     include 'header.php';
     ?>
-
     <div class="page-container">
         <div id="home" class="section">
             <!-- Home Section Content -->

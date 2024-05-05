@@ -17,11 +17,32 @@
 
 /* Body styles */
 body {
+    cursor: none;
     font-family: Arial, sans-serif;
     background-color: var(--gunmetal);
     color: var(--ivory);
     margin: 0;
     padding: 0;
+}
+
+.custom-cursor {
+    width: 50px;
+            /* Adjust size as needed */
+    height: 50px;
+            /* Adjust size as needed */
+    position: fixed;
+    top: 0;
+            /* Adjust position as needed */
+    left: 0;
+            /* Adjust position as needed */
+    pointer-events:none;
+            /* Ensure cursor doesn't interfere with clickable elements */
+    z-index: 9999;
+            /* Ensure cursor is on top of other elements */
+    background-image: url(pokemon-coffee-ditto-animated-custom-cursor.gif);
+            /* Replace with your cursor image path */
+    background-size: cover;
+            /* Maintain aspect ratio of cursor image */
 }
 
 /* Header styles */
@@ -415,8 +436,49 @@ main img {
     padding: 25px;
     width: 350px;
     height: 350px;
+    position: relative;
     object-fit: cover;
     color: var(--tigers-eye);
+}
+
+.hover-Pink,
+.hover-Metal,
+.hover-Terra,
+.hover-White {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 350px;
+    width: 350px;
+    opacity: 0;
+    transition: .5s ease;
+    transition-delay: .3s;
+}
+
+.storeImgcontainer:hover .hover-Pink,
+.storeImgcontainer:hover .hover-Metal,
+.storeImgcontainer:hover .hover-Terra,
+.storeImgcontainer:hover .hover-White {
+    padding: 25px;
+    height: 350px;
+    width: 350px;
+    opacity: 1;
+    animation: spin .8s linear;
+    /* Apply spinning animation */
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(180deg);
+        /* Rotate from 360 degrees */
+    }
+
+    to {
+        transform: rotateY(0deg);
+        /* Rotate to 0 degrees */
+    }
 }
 
 .containersDrippers {
