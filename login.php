@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Define animation for clicking motion */
+        @keyframes click {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(0.9);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Apply animation to button when clicked */
+        button:active {
+            animation: click 0.1s linear;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,9 +64,8 @@
             <input type="hidden" name="message" value="Login successful!">
 
             <button type="submit" name="login-submit" class="login-button">Sign in</button>
-            <p class="forgot-password"><a href="#">Forgot password?</a></p>
+            <p class="signup-link"><a href="tooBadSoSad.php">Forgot password?</a></p>
         </form>
-
         <p class="signup-link">Don't have an account? <a href="signup.php">Sign Up now</a>.</p>
     </div>
 

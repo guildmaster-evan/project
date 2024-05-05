@@ -14,21 +14,22 @@
                 <h1>About</h1>
             </div>
             <div class="about-textBlock">
-                <p>Welcome to GUILD Coffee, where the art of coffee is not just a passion, but a way of life.
-                    Nestled within the vibrant streets of San Antonio, Texas, GUILD Coffee stands as a beacon of community, creativity, and craftsmanship.
-                    At GUILD, we believe in the power of connection—connection between people, between cultures, and between the coffee farmer and the coffee lover. Our journey begins at the source, where we seek out the finest beans from across the globe, forging relationships with farmers who share our commitment to quality, sustainability, and ethical practices.
-                    Each bean tells a story, a story of terroir, tradition, and tireless dedication. From the lush hillsides of Colombia to the misty highlands of Ethiopia, we honor the heritage and heritage of each region, roasting our beans with precision and care to unlock their full potential.
-                    But our commitment to excellence doesn't stop at the roast. At GUILD Coffee, we are purveyors of possibility, constantly pushing the boundaries of what coffee can be. From our innovative brewing techniques to our ever-evolving menu of artisanal drinks, we invite you to embark on a journey of exploration and discovery with every sip.
-                    But GUILD Coffee is more than just a coffee shop—it's a gathering place, a sanctuary, a home away from home. Here, friends become family, strangers become friends, and every cup is infused with the warmth and camaraderie of our shared experience.
-                    So whether you're seeking your morning pick-me-up, an afternoon escape, or simply a moment of respite in the midst of life's hustle and bustle, we invite you to join us at GUILD Coffee, where every cup tells a story, and every moment is a celebration of the extraordinary in the everyday.
-                    Welcome to the GUILD.
+                <p>
                 </p>
             </div>
         </div>
         <div class="row2">
             <div class="left-column">
-                <div class="about-content">
-                    <h2>Our Story</h2>
+                <div class="about-story">
+                    <h2 style="font-size:xx-large; padding-bottom: 20px;">Our Story</h2>
+                    <p>In 2024, GUILD Coffee emerged as a new chapter in the story of San Antonio’s vibrant coffee culture. Inspired by the legacy of community spaces, GUILD took on the mantle of creating a haven where the art of coffee and the joy of connection converge.</p>
+                    <h3>The Genesis of GUILD</h3>
+                    <p>GUILD was born from a vision to craft a space that transcended the ordinary coffee shop experience. It was to be a place where the local community could gather, not just to savor exceptional coffee but to create lasting memories. The name ‘GUILD’ was chosen to honor the collective expertise of coffee artisans and to celebrate the shared pursuit of excellence.</p>
+                    <h3>The Quest for Quality</h3>
+                    <p>The GUILD team embarked on journeys to the heartlands of coffee—Central and South America, and Africa. There, they forged direct partnerships with farmers, ensuring that every bean was a beacon of quality, sustainability, and ethical practices. These precious beans were then brought back to Texas, where they were lovingly roasted on state-of-the-art Probat roasters, tailored specifically for GUILD’s unique profile.</p>
+                    <h3>The Art of Brewing</h3>
+                    <p>At GUILD, brewing is more than a process; it’s a performance. Our baristas, true coffee professionals, are the maestros of this art. They remember not just your name and your favorite drink, but also the stories that make you, you. They’re there to celebrate your successes, offer comfort, or simply share a smile—all while crafting the perfect cup of coffee that’s been sourced, roasted, and now brewed, with you in mind.
+                    </p>
                 </div>
                 <div>
                     <img src="about\img\20230910_091808.jpg" alt="Coffee 1">
@@ -45,10 +46,10 @@
                         <img src="about\img\20230917_101237.jpeg" alt="Coffee 4">
                     </div>
                 </div>
-                <h2>Future Aspirations</h2>
                 <div class="about-textBlock">
+                    <h2>The Mission</h2>
                     <p>
-                        GUILD Coffee's future goals encompass a dedication to sustainability, community, and innovation. With a vision to expand its footprint while minimizing its environmental impact, GUILD aims to not only offer exceptional coffee but also to foster meaningful connections within its community. By embracing sustainability practices, engaging in educational initiatives, and prioritizing customer satisfaction, GUILD Coffee aspires to become more than just a coffee shop—it aims to be a catalyst for positive change, enriching lives and fostering a sense of belonging for all who enter its doors.
+                        GUILD Coffee is more than a coffee shop—it’s a beacon of light in the community. It’s that bright spot in your day, a place where every interaction is an opportunity to brighten someone’s world. At GUILD, we don’t just serve coffee; we serve warmth, we serve friendship, and we serve stories. Welcome to GUILD Coffee, where every cup is a testament to our love for coffee and our commitment to the community we call home.
                     </p>
                 </div>
             </div>

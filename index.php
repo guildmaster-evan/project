@@ -39,8 +39,11 @@
                 <div class="container-about-img">
                     <div class="container-about-img-box1">
                         <div><img class="img-a" src="about\img\20230910_091808.jpg" alt="Coffee 1"></div>
+                    </div>
+                    <div class="container-about-img-box2">
                         <div><img class="img-b" src="about\img\20230912_093007.jpg" alt="Coffee 2"></div>
                     </div>
+
                 </div>
             </section>
         </div>
